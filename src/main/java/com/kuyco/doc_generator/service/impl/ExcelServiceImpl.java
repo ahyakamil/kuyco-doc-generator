@@ -30,8 +30,8 @@ public class ExcelServiceImpl implements ExcelService {
                 row = sheet.createRow(rowNum);
             }
 
-            fillCell(row, 0, transactionReportDto.getId());
-            fillCell(row, 1, transactionReportDto.getCustomerId());
+            fillCell(row, 0, String.valueOf(transactionReportDto.getId()));
+            fillCell(row, 1, String.valueOf(transactionReportDto.getCustomerId()));
             fillCell(row, 2, transactionReportDto.getCustomerName());
             fillCell(row, 3, String.join(", ", transactionReportDto.getItemNames()));
             fillCell(row, 4, transactionReportDto.getCustomerChange());
