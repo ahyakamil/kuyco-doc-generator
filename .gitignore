@@ -34,3 +34,5 @@ build/
 
 *.xlsx
 *.pdf
+
+!src/main/resources/transaction_template.xlsx
